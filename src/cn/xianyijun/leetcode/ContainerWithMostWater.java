@@ -10,7 +10,7 @@ public class ContainerWithMostWater {
 			return 0;
 		}
 		int start = 0;
-		int end = height.length;
+		int end = height.length - 1;
 		int max = 0;
 		while (start < end) {
 			int target = (end - start) * Math.min(height[start], height[end]);
