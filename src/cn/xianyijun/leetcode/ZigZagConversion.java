@@ -28,10 +28,10 @@ public class ZigZagConversion {
 		char[] chars = s.toCharArray();
 		for (int i = 0; i < numRows; i++) {
 			int interval = step - 2 * i;
-			for (int j = i; j < chars.length; j++) {
+			for (int j = i; j < chars.length; j += step) {
 				sb.append(chars[j]);
 				if (interval > 0 && interval < step && j + interval < len && count < len) {
-					sb.append(j + interval);
+					sb.append(chars[j + interval]);
 					count++;
 				}
 			}
