@@ -1,7 +1,7 @@
 package cn.xianyijun.leetcode;
 
 public class MultiplyStrings {
-	public static String multiply(String num1, String num2) {
+	public String multiply(String num1, String num2) {
 		if (num1.isEmpty() && num2.isEmpty()) {
 			return "";
 		}
@@ -28,9 +28,5 @@ public class MultiplyStrings {
 			sb.append(result[count++]);
 		}
 		return sb.toString();
-	}
-
-	public static void main(String[] args) {
-		System.out.println(multiply("9", "9"));
 	}
 }
