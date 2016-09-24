@@ -7,7 +7,7 @@ package cn.xianyijun.leetcode;
 Note: You can only move either down or right at any point in time.
  */
 public class MinimumPathSum {
-	public  int minPathSum(int[][] grid) {
+	public int minPathSum(int[][] grid) {
 		if (grid == null || grid.length == 0) {
 			return 0;
 		}
